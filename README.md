@@ -4,6 +4,7 @@
 Tienda online realizada en Django Framework (API Backend) y Javascript (Vanilla) con consumo de datos brindados por la empresa BSale.
 
 ## API's
+Las API's están desplegadas en un servidor Heroku para el consumo de la aplicación cliente.
 Las API's utilizadas en el ejercicio son las siguientes:
 
 **Search**
@@ -12,7 +13,7 @@ Las API's utilizadas en el ejercicio son las siguientes:
 
 * **URL**
 
-  /api/search
+  https://bsaleacasoapi.herokuapp.com/search_api
 
 * **Método:**
   
@@ -52,7 +53,7 @@ Las API's utilizadas en el ejercicio son las siguientes:
 * **Ejemplo:**
 
   ```javascript
-    fetch('api/search?s=pisco&page=1')
+    fetch('https://bsaleacasoapi.herokuapp.com/search_api?s=pisco&page=1')
     .then(response => response.json())
     .then(responses =>{
         console.log(responses);
@@ -64,7 +65,7 @@ Las API's utilizadas en el ejercicio son las siguientes:
 
 * **URL**
 
-  /api/categories/search/<str:cat>/<int:num>
+  https://bsaleacasoapi.herokuapp.com/categories_api/search/<str:cat>/<int:num>
 
 * **Método:**
   
@@ -102,7 +103,7 @@ Las API's utilizadas en el ejercicio son las siguientes:
 * **Ejemplo:**
 
   ```javascript
-    fetch('api/categories/search/ron/1')
+    fetch('https://bsaleacasoapi.herokuapp.com/categories_api/search/search/ron/1')
     .then(response => response.json())
     .then(responses =>{
         console.log(responses);
@@ -114,7 +115,7 @@ Las API's utilizadas en el ejercicio son las siguientes:
 
 * **URL**
 
-  /api/categories
+  https://bsaleacasoapi.herokuapp.com/categories_api
 
 * **Método:**
   
@@ -142,7 +143,7 @@ Las API's utilizadas en el ejercicio son las siguientes:
 * **Ejemplo:**
 
   ```javascript
-    fetch('api/categories')
+    fetch('https://bsaleacasoapi.herokuapp.com/categories_api')
     .then(response => response.json())
     .then(responses =>{
         console.log(responses);
